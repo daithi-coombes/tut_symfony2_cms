@@ -13,4 +13,10 @@ use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
 class Page implements RouteReferrersReadInterface
 {
     use ContentTrait;
+
+    /**
+     * @PHPCR\ParendDocument()
+     * @var [type]
+     */
+    protected $parent;
 }

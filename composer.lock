@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ab21ec9c3a522495ef4f7c85368e234c",
+    "hash": "4e16bd849d6323c4eacaf1d97a85a80e",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -3311,7 +3311,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.3"
+        "php": ">=5.4"
     },
     "platform-dev": []
 }

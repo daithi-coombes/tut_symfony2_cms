@@ -1,0 +1,9 @@
+# serc/Acme/BasicCmsBundle/Resources/config/services.yml
+services:
+    acme_basiccms.basic_cms.phpcr.initializer:
+        class: Doctrine\Bundle\PHPCRBundle\Initializer\GenericInitializer
+        arguments:
+            - My cusom initializer
+            - ["/cms/pages", "/cms/posts", "/cms/routes"]
+        tags:
+            - { name: doctrine_phpcr.initializer }

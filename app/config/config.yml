@@ -60,23 +60,18 @@ doctrine:
         #   3. Uncomment next line:
         #     path:     "%database_path%"
 
-    orm:
-        auto_generate_proxy_classes: "%kernel.debug%"
-        auto_mapping: true
-
-#as per http://symfony.com/doc/current/cmf/cookbook/database/create_new_project_phpcr_odm.html
+# PHPCR Configuration
 doctrine_phpcr:
-    #configure PHPCR session
-    session:
-        backend: "%phpcr_backend%"
-        workspace: "%phpcr_workspace%"
-        username: "%phpcr_user%"
-        password: "%phpcr_pass%"
-    #enable the ODM layer
-    odm:
-        auto_mapping: true
-        auto_generate_proxy_classes: "%kernel.debug%"
-#end as per
+   # configure the PHPCR session
+   session:
+       backend: "%phpcr_backend%"
+       workspace: "%phpcr_workspace%"
+       username: "%phpcr_user%"
+       password: "%phpcr_pass%"
+   # enable the ODM layer
+   odm:
+       auto_mapping: true
+       auto_generate_proxy_classes: "%kernel.debug%"
 
 # Swiftmailer Configuration
 swiftmailer:

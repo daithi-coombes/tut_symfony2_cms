@@ -3,11 +3,18 @@ parameters:
     database_driver:   pdo_mysql
     database_host:     127.0.0.1
     database_port:     ~
-    database_name:     symfony
-    database_user:     root
-    database_password: ~
+    database_name:     tut_symfony_cms
+    database_user:     tut_symfony
+    database_password: chanman
     # You should uncomment this if you want use pdo_sqlite
     # database_path: "%kernel.root_dir%/data.db3"
+
+    phpcr_backend:
+        type: doctrinedbal
+        connection: default
+    phpcr_workspace: default
+    phpcr_user: admin
+    phpcr_pass: admin
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1
@@ -18,12 +25,3 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
-
-    #as per http://symfony.com/doc/current/cmf/cookbook/database/create_new_project_phpcr_odm.html
-    phpcr_backend:
-        type: doctrinedbal
-        connection: default
-    phpcr_workspace: default
-    phpcr_user: admin
-    phpcr_pass: admin
-    #end as per

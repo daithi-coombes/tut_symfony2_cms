@@ -16,7 +16,7 @@ trait ContentTrait
     protected $id;
 
     /**
-     * @PHPCR\ParendDocument()
+     * @PHPCR\ParentDocument()
      * @var [type]
      */
     protected $parent;

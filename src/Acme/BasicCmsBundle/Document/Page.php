@@ -14,9 +14,4 @@ class Page implements RouteReferrersReadInterface
 {
     use ContentTrait;
 
-    /**
-     * @PHPCR\ParendDocument()
-     * @var [type]
-     */
-    protected $parent;
 }
